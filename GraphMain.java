@@ -1,6 +1,3 @@
-import java.util.function.Function;
-import java.util.function.UnaryOperator;
-
 import javax.swing.JFrame;
 
 public class GraphMain {
@@ -10,7 +7,7 @@ public class GraphMain {
 		double[] values = new double[domain.length];
 		Point[] points = new Point[domain.length];
 		for(int i=0;i<domain.length;++i) {
-			domain[i] = Math.toRadians(i-120);
+			domain[i] = Math.toRadians(i);
 			values[i] = function.apply(domain[i]);
 			points[i] = new Point(domain[i], values[i]);
 		}
